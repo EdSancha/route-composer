@@ -34,6 +34,7 @@
 		1A613002B9C7857DF5124C847D1EFB5D /* AbstractAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7B4BAA0857F32943D6D22550DA7EA1 /* AbstractAction.swift */; };
 		1B5D8233D501A8A9429055592538FFCA /* SimpleContainerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C462433CFD7C2F48220C8CA8C8C377FF /* SimpleContainerFactory.swift */; };
 		1BA534CFB8FF7924204905DF40C2CB28 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239A314731DEBB458F1ACCC23C190543 /* UIViewController+Extension.swift */; };
+		1BE542206E8C5429F33769D3 /* UIHostingControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE5422934573E8F360F8232 /* UIHostingControllerFactory.swift */; };
 		1C1DA080789EEBCDDA2690E44D940D6D /* ContainerStepChainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECB89AEB595F29E4D6729BD283040B /* ContainerStepChainAssembly.swift */; };
 		1CF7D7A6BD27770DE8B71A94DCF2A626 /* Dismissible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599872886BF5BBD993F19AF5B13F66EA /* Dismissible.swift */; };
 		228493EEA0C56314E454F8B0F16A631F /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B5D3DDA1E13057D06E34284E81BD12 /* ContainerViewController.swift */; };
@@ -269,6 +270,7 @@
 		1AE09034251EEE3C0CF6D4E2239C2758 /* NavigationDelayInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NavigationDelayInterceptor.swift; sourceTree = "<group>"; };
 		1B60B61AE361DFD12359C571DA203F6A /* PostponedIntegrationFactory.swift.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PostponedIntegrationFactory.swift.html; path = docs/tests/PostponedIntegrationFactory.swift.html; sourceTree = "<group>"; };
 		1B881F54D5E6476CEC9629EA55AEFFEB /* DefaultRouter.html */ = {isa = PBXFileReference; includeInIndex = 1; name = DefaultRouter.html; path = docs/Structs/DefaultRouter.html; sourceTree = "<group>"; };
+		1BE5422934573E8F360F8232 /* UIHostingControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHostingControllerFactory.swift; sourceTree = "<group>"; };
 		1CCD7F5E9916235F51A62AAEBC68E6AF /* InlineInterceptor.html */ = {isa = PBXFileReference; includeInIndex = 1; name = InlineInterceptor.html; path = docs/docsets/RouteComposer.docset/Contents/Resources/Documents/Structs/InlineInterceptor.html; sourceTree = "<group>"; };
 		1CEDF27AE3D0AECFB01D0DB1E18F3864 /* CompleteFactoryAssembly.html */ = {isa = PBXFileReference; includeInIndex = 1; name = CompleteFactoryAssembly.html; path = docs/docsets/RouteComposer.docset/Contents/Resources/Documents/Classes/CompleteFactoryAssembly.html; sourceTree = "<group>"; };
 		1D5EC0A936A07528D4FC12D352A7388E /* PushToDetailsAction.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PushToDetailsAction.html; path = docs/docsets/RouteComposer.docset/Contents/Resources/Documents/Structs/SplitViewControllerActions/PushToDetailsAction.html; sourceTree = "<group>"; };
@@ -1562,6 +1564,7 @@
 				18004F14970E00B055B88651749D1D0D /* SplitControllerFactory.swift */,
 				12B672BA0EEB8DE2F2EBB4DA86F3BD8B /* StoryboardFactory.swift */,
 				CFFC3FD5908178BFADC1524D3CBBA506 /* TabBarControllerFactory.swift */,
+				1BE5422934573E8F360F8232 /* UIHostingControllerFactory.swift */,
 			);
 			name = Factories;
 			path = RouteComposer/Classes/Factories;
@@ -1925,6 +1928,7 @@
 				34FDD2DF464C3768B23F474D3B31BB0C /* UIViewController+PrivateExtension.swift in Sources */,
 				16570AB3FADF00E2F8DA1D5AA42E395D /* UIWindow+Extension.swift in Sources */,
 				558DB88BFC9E69E53B5758EEDA669B53 /* WindowProvider.swift in Sources */,
+				1BE542206E8C5429F33769D3 /* UIHostingControllerFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

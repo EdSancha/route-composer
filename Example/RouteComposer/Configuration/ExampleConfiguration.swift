@@ -9,6 +9,7 @@
 
 import Foundation
 import RouteComposer
+import SwiftUI
 
 let transitionController = BlurredBackgroundTransitionController()
 
@@ -22,7 +23,7 @@ protocol ExampleScreenConfiguration {
 
     var colorScreen: DestinationStep<ColorViewController, String> { get }
 
-    var starScreen: DestinationStep<StarViewController, Any?> { get }
+    var starScreen: DestinationStep<UIViewController, String> { get }
 
     var routingSupportScreen: DestinationStep<RoutingRuleSupportViewController, String> { get }
 
@@ -156,32 +157,36 @@ extension ExampleScreenConfiguration {
 
 struct ExampleConfiguration: ExampleScreenConfiguration {
 
-    var starScreen: DestinationStep<StarViewController, Any?> {
+    var starScreen: DestinationStep<UIViewController, String> {
+        guard #available(iOS 13.0, *) else {
+            fatalError()
+        }
         return StepAssembly(
-            finder: ClassFinder<StarViewController, Any?>(options: .currentAllStack),
-            factory: ClassFactory()
+            finder: UIHostingControllerFinder(),
+            factory: UIHostingControllerFactory<ContentView>()
         )
-        .adding(ExampleGenericContextTask<StarViewController, Any?>())
-        .adding(LoginInterceptor<Any?>())
+        .adding(ExampleGenericContextTask<UIHostingController<ContentView>, String>())
+        //.adding(LoginInterceptor<Any?>())
         .using(UITabBarController.add())
-        .from(homeScreen)
-        .assemble()
+        .from(homeScreen.adaptingContext())
+        .assemble().unsafelyRewrapped()
     }
 
 }
 
 struct AlternativeExampleConfiguration: ExampleScreenConfiguration {
 
-    var starScreen: DestinationStep<StarViewController, Any?> {
-        return StepAssembly(
-            finder: ClassFinder<StarViewController, Any?>(options: .currentAllStack),
-            factory: ClassFactory()
-        )
-        .adding(ExampleGenericContextTask<StarViewController, Any?>())
-        .adding(LoginInterceptor())
-        .using(UINavigationController.push())
-        .from(circleScreen.expectingContainer())
-        .assemble()
+    var starScreen: DestinationStep<UIViewController, String> {
+        fatalError()
+//        return StepAssembly(
+//            finder: ClassFinder<StarViewController, Any?>(options: .currentAllStack),
+//            factory: ClassFactory()
+//        )
+//        .adding(ExampleGenericContextTask<StarViewController, Any?>())
+//        .adding(LoginInterceptor())
+//        .using(UINavigationController.push())
+//        .from(circleScreen.expectingContainer())
+//        .assemble()
     }
 
 }

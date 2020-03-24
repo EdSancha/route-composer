@@ -13,6 +13,7 @@
 		4552B84B23018943006E2A5D /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* TabBar.storyboard */; };
 		4570AD2A2238769C00809A01 /* ExtrasTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4570AD292238769C00809A01 /* ExtrasTest.swift */; };
 		45762A7E240D26B40018D344 /* TestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45762A7D240D26B30018D344 /* TestStoryboard.storyboard */; };
+		45D268C9242A9F1D007EB41E /* SwiftUIContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D268C8242A9F1D007EB41E /* SwiftUIContentView.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDB1AFB9204008FA782 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* TabBar.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
@@ -174,6 +175,7 @@
 		4570AD292238769C00809A01 /* ExtrasTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtrasTest.swift; sourceTree = "<group>"; };
 		45762A7D240D26B30018D344 /* TestStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestStoryboard.storyboard; sourceTree = "<group>"; };
 		45AF80BC23C5F25100F0229F /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
+		45D268C8242A9F1D007EB41E /* SwiftUIContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIContentView.swift; sourceTree = "<group>"; };
 		4D016BC78C8FFDC66C0F661D /* RouteComposer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RouteComposer.podspec; path = ../RouteComposer.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4D5D44CE2FD3DEAA3108C874 /* Pods_RouteComposer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RouteComposer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		523DE209C4401E98B0605566 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -448,6 +450,7 @@
 				9AFBC7DC358700F46FADF768 /* WishList */,
 				9AFBC408291B6E99D0367D07 /* No Library Dependency */,
 				9AFBCAC0F2D822F36959DB6E /* ExampleNavigationController.swift */,
+				45D268C8242A9F1D007EB41E /* SwiftUIContentView.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -875,6 +878,7 @@
 				9AFBC3DB63861EB552A2CD2E /* ExampleUniversalLinksManager.swift in Sources */,
 				9AFBCBB5F4DDE646EAFA437B /* LoginViewController.swift in Sources */,
 				9AFBC11AB0BE495D5E2959C1 /* LoginConfiguration.swift in Sources */,
+				45D268C9242A9F1D007EB41E /* SwiftUIContentView.swift in Sources */,
 				9AFBCB1EA868F677EA54C083 /* ExampleAnalyticsSupport.swift in Sources */,
 				9AFBC466CF915E3C0F137958 /* ProductConfiguration.swift in Sources */,
 				9AFBC0ADE4D123DD36E06972 /* ProductViewController.swift in Sources */,
